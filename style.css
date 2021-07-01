@@ -1,0 +1,120 @@
+body {
+  display: grid;
+  width: 92vw;
+  height: 92vh;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  grid-template-rows: 10vh auto 1fr;
+  align-items: center;
+  justify-items: end;
+}
+
+
+
+main {
+  grid-column: 2;
+  grid-row: 2;
+  position: sticky;
+  height: 90vh;
+  width: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: 1fr 500px 1fr;
+}
+
+header {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+}
+
+button {
+  width: auto;
+  height: auto;
+  grid-column: 2;
+  grid-row: 1;
+  border: white;
+  background-color: rgba(170, 255, 229, 0.3);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;
+  transition: 0.4s;
+}
+
+button:hover {
+  background: rgba(180, 255, 229, 1);
+
+}
+
+#wrapper {
+  grid-area: 2 / 2;
+
+}
+
+.grid {
+  position: sticky;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(6, auto);
+  height: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 14px 49px 0px;
+}
+
+#color-chooser {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: dense;
+
+  grid-area: 2 / 1;
+  width: 100px;
+  height: 150px;
+  justify-self: end;
+  align-self: center;
+  border: 0.5px solid white;
+  border-radius: 5%;
+  margin-top: 40px;
+  background: grey;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 50px -12px
+
+
+}
+
+#color-chooser .color {
+  grid-column: auto;
+  grid-row: auto;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 0;
+  border: 0.5px solid white;
+}
+
+#reload-button {
+  grid-area: 2 / 1;
+  width: 100px;
+  height: 150px;
+  justify-self: end;
+  border: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;
+  background: rgba(244, 0, 0, 0.2);
+  transition: 0.4 ease;
+  margin-top: 10px;
+
+}
+
+#reload-button:hover {
+  background: rgba(244, 0, 0, 1);
+  color: white;
+}
+
+
+
+
+.box {
+  width: 100%;
+  height: 100%;
+  border: 0.2px solid grey;
+  background-color: black;
+}
